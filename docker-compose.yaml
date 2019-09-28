@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+
+  java:
+
+    image: chrisperkins/corretto11-ubuntu:v1
+
+    build:
+      context: build-corretto11-ubuntu
+
+      args:
+        SSH_ADMIN_USER: ${SSH_ADMIN_USER}
+        SSH_ADMIN_PASS: ${SSH_ADMIN_PASS}
+
+    hostname: ${CONTAINER_HOSTNAME}
+
+    command: ["java", "-version"]
+
+    ports:
+      - "2222:22"
