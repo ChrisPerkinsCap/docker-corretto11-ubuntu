@@ -10,7 +10,7 @@ https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/what-is-corretto-11.h
 ### Image Attributes
 
 > NAME: chrisperkins/corretto-11-ubuntu \
-TAG: 18-04-19 \
+TAG: v1 \
 JAVA: 11.0.3
 
 ### Container Attributes
